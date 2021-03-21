@@ -1,4 +1,41 @@
 .button {
-    background: red;
-
+    @include button-size();
+    margin: 5px;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    -webkit-appearance: none;
+    font-weight: 500;
+    border-width: 2px;
+    font-family: inherit;
+    //@apply text-white;
+    &.solid {
+        &.primary {
+            @include button(theme('colors.primary'), black, red);
+        }
+        //
+        //&.secondary {
+        //    @include button(@apply text-grey-medium, @apply text-secondary, @apply text-secondary);
+        //}
+        //
+        //&.success {
+        //    @include button(@apply text-white, @apply text-success);
+        //}
+        //
+        //&.warning {
+        //    @include button(@apply text-white, @apply text-warning);
+        //}
+        //
+        //&.danger {
+        //    @include button(@apply text-white, @apply text-danger);
+        //}
+        //
+        //&.brand {
+        //    @include button(@apply text-white, @apply text-brand);
+        //}
+        //
+        //&.white {
+        //    @include button(@apply text-black, @apply text-white, #ccc);
+        //}
+    }
 }

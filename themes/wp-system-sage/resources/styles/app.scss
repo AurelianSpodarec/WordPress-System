@@ -1,6 +1,10 @@
 @import 'tailwindcss/base';
 
-//@import 'common/global';
 
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import 'mixins/button';
+@import 'objects/button';
+
+

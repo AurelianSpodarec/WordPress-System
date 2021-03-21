@@ -7,6 +7,8 @@ use Roots\Acorn\View\Component;
 class Button extends Component
 {
 
+    // TODO: Add error handling
+
     public $buttonVariant;
     public $buttonKind;
     public $buttonRadius;
@@ -15,45 +17,38 @@ class Button extends Component
     public $message;
 
 
-
     public $variant = [
-        'primary' => 'primary',
+        'primary'   => 'primary',
         'secondary' => 'secondary',
-        'teritary' => 'teritary',
-        'success' => 'success',
-        'warning' => 'warning',
-        'danger' => 'danger',
-        'white' => 'white',
+        'teritary'  => 'teritary',
+        'success'   => 'success',
+        'warning'   => 'warning',
+        'danger'    => 'danger',
+        'info'      => 'blue',
+        'white'     => 'white',
     ];
 
     public $kind = [
-        'solid' => 'solid',
+        'solid'   => 'solid',
         'outline' => 'black',
-        'clear' => 'black',
+        'clear'   => 'black',
     ];
 
     public $radius = [
-        'none' => 'none',
-        'small' => 'small',
+        'none'   => 'none',
+        'small'  => 'small',
         'medium' => 'black',
-        'large' => 'black',
-        'full' => 'full',
+        'large'  => 'black',
+        'full'   => 'full',
     ];
 
     public $size = [
-        'sm' => 'sm',
+        'sm'     => 'sm',
         'medium' => 'medium',
-        'large' => 'large',
+        'large'  => 'large',
     ];
 
-    
-    /**
-     * Create the component instance.
-     *
-     * @param  string  $type
-     * @param  string  $message
-     * @return void
-     */
+
     public function __construct($variant = 'primary', $kind = 'solid', $radius = 'none', $size = 'medium', $message = null)
     {
         $this->buttonVariant = $this->variant[$variant] ?? $this->variant['default'];
