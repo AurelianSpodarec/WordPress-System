@@ -16,35 +16,61 @@ module.exports = {
         extend: {
             colors: {
                 primary: {
-                    'DEFAULT': 'red',
+                    'default': '#6418c3',
                     '300': '#fdcb56',
                     '500': '#f5ab22',
                     '700': '#ee811d'
                 },
                 secondary: {
-                    DEFAULT: 'red',
-                    '500': '#4b4f5e'
+                    'default': '#dc3ccc',
+                    '300': '#fdcb56',
+                    '500': '#4b4f5e',
+                    '700': '#ee811d'
                 },
                 teritary: {
-                    DEFAULT: 'red',
-                    '500': 'blue'
+                    'default': '#015249',
+                    '300': '#fdcb56',
+                    '500': 'blue',
+                    '700': '#ee811d'
                 },
-                accent: 'red',
-                semantic: {
-                    success: 'green',
-                    warning: 'orange',
-                    error: 'red',
-                    info: 'blue'
+                // accent: {
+                //     'default': '#015249'
+                // },
+                // complimentary: 'red',
+                'success': {
+                    'default': '#2bc155',
+                    '300': 'green',
+                    '500': 'green',
+                    '700': 'green',
                 },
+                'warning': {
+                    'default': '#ffab2d',
+                    '300': 'orange',
+                    '500': 'orange',
+                    '700': 'orange',
+                },
+                'danger': {
+                    'default': '#ff2e2e',
+                    '300': 'red',
+                    '500': 'red',
+                    '700': 'red',
+                },
+                'info': {
+                    'default': '#2b98d6',
+                    '300': 'blue',
+                    '500': 'blue',
+                    '700': 'blue',
+                }
+
             }, //colors
             spacing: {
-                xxs: '4px',
-                xs: '8px',
-                sm: '12px',
-                md: '16px',
-                lg: '24px',
-                xl: '32px',
-                xxl: '64px',
+                'xxs': '4px',
+                'xs': '8px',
+                'sm': '12px',
+                'md': '16px',
+                'lg': '24px',
+                'xl': '32px',
+                'xxl': '64px',
             }, //spacing
         },
     }, //theme

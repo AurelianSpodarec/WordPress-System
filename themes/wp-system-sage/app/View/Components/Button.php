@@ -18,34 +18,34 @@ class Button extends Component
 
 
     public $variant = [
-        'primary'   => 'primary',
-        'secondary' => 'secondary',
-        'teritary'  => 'teritary',
-        'success'   => 'success',
-        'warning'   => 'warning',
-        'danger'    => 'danger',
-        'info'      => 'blue',
-        'white'     => 'white',
+        'primary'   => 'button-primary',
+        'secondary' => 'button-secondary',
+        'teritary'  => 'button-teritary',
+        'success'   => 'button-success',
+        'warning'   => 'button-warning',
+        'danger'    => 'button-danger',
+        'info'      => 'button-info',
+        'white'     => 'button-white',
     ];
 
     public $kind = [
-        'solid'   => 'solid',
-        'outline' => 'black',
-        'clear'   => 'black',
+        'solid'   => 'button-solid',
+        'outline' => 'button-outline',
+        'clear'   => 'button-clear',
     ];
 
     public $radius = [
-        'none'   => 'none',
-        'small'  => 'small',
-        'medium' => 'black',
-        'large'  => 'black',
-        'full'   => 'full',
+        'none'   => 'button-radius-none',
+        'small'  => 'button-radius-small',
+        'medium' => 'button-radius-black',
+        'large'  => 'button-radius-black',
+        'full'   => 'button-radius-full',
     ];
 
     public $size = [
-        'sm'     => 'sm',
-        'medium' => 'medium',
-        'large'  => 'large',
+        'sm'     => 'button-sm',
+        'medium' => 'button-medium',
+        'large'  => 'button-large',
     ];
 
 
