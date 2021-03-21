@@ -1,0 +1,3 @@
+<section>
+    {!! $children ?? $slot !!}
+</section>
