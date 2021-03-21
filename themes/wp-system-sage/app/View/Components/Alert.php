@@ -12,6 +12,7 @@ class Alert extends Component
      * @var string
      */
     public $type;
+    public $kind;
 
     /**
      * The alert message.
@@ -26,10 +27,17 @@ class Alert extends Component
      * @var array
      */
     public $types = [
-        'default' => 'text-indigo-50 bg-indigo-400',
-        'success' => 'text-green-50 bg-green-400',
-        'caution' => 'text-yellow-50 bg-yellow-400',
-        'warning' => 'text-red-50 bg-red-400',
+        'default' => 't1',
+        'success' => '  t2',
+        'caution' => ' t3',
+        'warning' => 't4',
+    ];
+
+    public $kinds = [
+        'default' => 'defaultTkind',
+        'success' => 'bg-green-50 ',
+        'caution' => 'text-yellow-50  ',
+        'warning' => 'text-red-50  ',
     ];
 
     /**
@@ -39,9 +47,10 @@ class Alert extends Component
      * @param  string  $message
      * @return void
      */
-    public function __construct($type = 'default', $message = null)
+    public function __construct($type = 'default', $kind = 'success', $message = null)
     {
         $this->type = $this->types[$type] ?? $this->types['default'];
+        $this->kind = $this->kinds[$kind] ?? $this->kinds['success'];
         $this->message = $message;
     }
 

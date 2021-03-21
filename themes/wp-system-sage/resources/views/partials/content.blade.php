@@ -9,7 +9,7 @@
     @include('partials/entry-meta')
   </header>
 
-  <div class="entry-summary">
-    @php(the_excerpt())
-  </div>
+{{--  <div class="entry-summary">--}}
+{{--    @php(the_excerpt())--}}
+{{--  </div>--}}
 </article>

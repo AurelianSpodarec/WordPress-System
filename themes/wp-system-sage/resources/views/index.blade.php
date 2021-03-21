@@ -1,23 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
+    @include('partials.page-header')
 
-  @if (! have_posts())
-    <x-alert type="warning">
-      {!! __('Sorry, no results were found.', 'sage') !!}
+    <h2>Buttons</h2>
+
+    <x-button variant="secondary" kind="solid">Primary</x-button>
+
+    <x-alert>
+        {!! __('Sorry, no results were found.', 'sage') !!}
     </x-alert>
 
-    {!! get_search_form(false) !!}
-  @endif
 
-  @while(have_posts()) @php(the_post())
-    @includeFirst(['partials.content-' . get_post_type(), 'partials.content'])
-  @endwhile
+{{--    <x-button variant="primary" kind="solid">Primary</x-button>--}}
+{{--    <x-button variant="secondary">Secondary</x-button>--}}
+{{--    <x-button variant="success">Success</x-button>--}}
+{{--    <x-button variant="warning">Warning</x-button>--}}
+{{--    <x-button variant="danger">Danger</x-button>--}}
+{{--    <x-button variant="info">Info</x-button>--}}
+    {{--    <x-button variant="info">Light</x-button>--}}
+    {{--    <x-button variant="info">Dark</x-button>--}}
+    {{--    <x-button variant="link">Link</x-button>--}}
+    <h2>Outline Buttons</h2>
 
-  {!! get_the_posts_navigation() !!}
-@endsection
+    <h2>Sizes</h2>
+    {{--Size/block--}}
 
-@section('sidebar')
-  @include('partials.sidebar')
+    <h2>Active State</h2>
+    <h2>Disabled State</h2>
+
+    <h2>Button Loading State</h2>
 @endsection
