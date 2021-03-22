@@ -13,6 +13,7 @@ class Button extends Component
     public $buttonKind;
     public $buttonRadius;
     public $buttonSize;
+//    public $buttonDisabled;
 
     public $message;
 
@@ -48,6 +49,8 @@ class Button extends Component
         'large'  => 'button-large',
     ];
 
+    public $disabled;
+
 
     public function __construct($variant = 'primary', $kind = 'solid', $radius = 'none', $size = 'medium', $message = null)
     {
@@ -55,16 +58,11 @@ class Button extends Component
         $this->buttonKind = $this->kind[$kind] ?? $this->kind['default'];
         $this->buttonRadius = $this->radius[$radius] ?? $this->radius['medium'];
         $this->buttonSize = $this->size[$size] ?? $this->size['medium'];
+        $this->buttonDisabled = $disabled ?? 'disabled';
 
         $this->message = $message;
     }
 
-
-    /**
-     * Get the view / contents that represent the component.
-     *
-     * @return \Illuminate\View\View|string
-     */
     public function render()
     {
         return $this->view('components.button');

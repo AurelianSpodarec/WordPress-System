@@ -31,7 +31,16 @@
     {{--Size/block--}}
 
     <h2>Active State</h2>
-    <h2>Disabled State</h2>
+
+    <x-section>
+        <h2>Disabled State</h2>
+        <x-button variant="primary" kind="solid" disabled>Primary</x-button>
+        <x-button variant="secondary" kind="solid" disabled>Secondary</x-button>
+        <x-button variant="success" kind="solid" disabled>Success</x-button>
+        <x-button variant="warning" kind="solid" disabled>Warning</x-button>
+        <x-button variant="danger" kind="solid" disabled>Danger</x-button>
+        <x-button variant="info" kind="solid" disabled>Info</x-button>
+    </x-section>
 
     <h2>Button Loading State</h2>
 @endsection

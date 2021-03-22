@@ -16,16 +16,16 @@ module.exports = {
         extend: {
             colors: {
                 primary: {
-                    'default': '#6418c3',
-                    '300': '#fdcb56',
-                    '500': '#f5ab22',
-                    '700': '#ee811d'
+                    'default': '#5041ab',
+                    '300': '#b9b3dd',
+                    '500': '#968dcd',
+                    '700': '#7367bc'
                 },
                 secondary: {
-                    'default': '#dc3ccc',
-                    '300': '#fdcb56',
-                    '500': '#4b4f5e',
-                    '700': '#ee811d'
+                    'default': '#ffaa1b',
+                    '300': '#ffdda4',
+                    '500': '#ffcc76',
+                    '700': '#ffbb49'
                 },
                 teritary: {
                     'default': '#015249',
@@ -38,39 +38,43 @@ module.exports = {
                 // },
                 // complimentary: 'red',
                 'success': {
-                    'default': '#2bc155',
-                    '300': 'green',
-                    '500': 'green',
-                    '700': 'green',
+                    'default': '#2d9e64',
+                    '300': '#acd8c1',
+                    '500': '#81c5a2',
+                    '700': '#57b183',
                 },
                 'warning': {
-                    'default': '#ffab2d',
-                    '300': 'orange',
-                    '500': 'orange',
-                    '700': 'orange',
+                    'default': '#f15223',
+                    '300': '#f9baa7',
+                    '500': '#f7977b',
+                    '700': '#f4754f',
                 },
                 'danger': {
-                    'default': '#ff2e2e',
-                    '300': 'red',
-                    '500': 'red',
-                    '700': 'red',
+                    'default': '#f73131',
+                    '300': '#ff8585',
+                    '500': '#ff5050',
+                    '700': '#f73030',
                 },
                 'info': {
-                    'default': '#2b98d6',
-                    '300': 'blue',
-                    '500': 'blue',
-                    '700': 'blue',
+                    'default': '#05c1ff',
+                    '300': '#9be6ff',
+                    '500': '#6adaff',
+                    '700': '#38cdff',
                 }
 
             }, //colors
             spacing: {
-                'xxs': '4px',
+                'default': '16px',
+                '2xs': '4px',
                 'xs': '8px',
                 'sm': '12px',
                 'md': '16px',
                 'lg': '24px',
                 'xl': '32px',
-                'xxl': '64px',
+                '2xl': '48px',
+                '3xl': '64px',
+                '4xl': '80px',
+                '5xl': '96px',
             }, //spacing
         },
     }, //theme

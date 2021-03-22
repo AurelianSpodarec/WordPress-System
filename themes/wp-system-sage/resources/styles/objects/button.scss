@@ -1,3 +1,7 @@
+// ==========================================================================
+// # Objects: Button
+// ==========================================================================
+
 .button {
     @include button-size();
     margin: 5px;
@@ -9,6 +13,9 @@
     border-width: 2px;
     font-family: inherit;
     //@apply text-white;
+
+    // Add disabled color
+
     &.button-solid {
         &.button-primary {
             @include button(theme('colors.white'), theme('colors.primary.default'), theme('colors.primary.300'));

@@ -1,14 +1,30 @@
+// ==========================================================================
+// # Mixins: Button
+// ==========================================================================
+
+
+
+// # Mixins: Button Mixin
+// ==========================================================================
 @mixin button($color, $background, $border: $background) {
     color: $color;
     background-color: $background;
     // border-color: $border;
     border: 2px solid $border;
 
+    &[disabled] {
+        cursor: not-allowed;
+        color: $color;
+        border: 2px solid $background;
+        background-color: $border;
+    }
+
 }
 
 
 
-// Button sizes
+// # Mixins: Button-size
+// ==========================================================================
 @mixin button-size(
     $padding-vertical: 10px,
     $padding-horizontal: 20px,
