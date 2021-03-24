@@ -33,10 +33,10 @@ module.exports = {
                     '500': 'blue',
                     '700': '#ee811d'
                 },
-                // accent: {
-                //     'default': '#015249'
-                // },
-                // complimentary: 'red',
+                accent: {
+                    'default': '#015249'
+                },
+                complimentary: 'red',
                 'success': {
                     'default': '#2d9e64',
                     '300': '#acd8c1',
