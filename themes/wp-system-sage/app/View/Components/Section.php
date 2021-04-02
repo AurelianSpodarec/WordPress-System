@@ -12,6 +12,21 @@ class Section extends Component
 
     // section insdie
 
+    // You can set breakpoints for the fluid prop. Setting it to a breakpoint (sm, md, lg, xl) will set the Container as fluid until the specified breakpoint.
+
+    // public $container = [
+    //     'default' => 'container',
+    //     'fluid' => '',
+    //     // '' => '',
+    // ];
+
+    public $bgColor = [
+        'default'   => 'bg-transparent',
+        'primary'   => 'bg-primary-default',
+        'secondary' => 'bg-secondary-default',
+        'teritary'  => 'bg-teritary-default'
+    ];
+
     public $section = [
         'default' => '16px',
         '2xs'     => 'section-2xs',
@@ -43,10 +58,14 @@ class Section extends Component
 
     ];
 
+    public $container;
 
-    public function __construct($children = null)
+    public function __construct($bgColor = 'default', $container = null, $message = null)
     {
-        $this->children = $children;
+        $this->bgColor = $this->bgColor[$bgColor] ?? $this->bgColor['default']; 
+        $this->container = $container;
+
+        $this->message = $message;
     }
 
 

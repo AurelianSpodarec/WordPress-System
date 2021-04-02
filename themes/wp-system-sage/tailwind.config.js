@@ -14,6 +14,26 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
+            backgroundColors: {
+                primary: {
+                    'default': '#5041ab',
+                    '300': '#b9b3dd',
+                    '500': '#968dcd',
+                    '700': '#7367bc'
+                },
+                secondary: {
+                    'default': '#ffaa1b',
+                    '300': '#ffdda4',
+                    '500': '#ffcc76',
+                    '700': '#ffbb49'
+                },
+                teritary: {
+                    'default': '#015249',
+                    '300': '#fdcb56',
+                    '500': 'blue',
+                    '700': '#ee811d'
+                },
+            },
             colors: {
                 primary: {
                     'default': '#5041ab',

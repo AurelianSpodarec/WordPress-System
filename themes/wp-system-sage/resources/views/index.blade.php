@@ -1,7 +1,31 @@
 @extends('layouts.app')
 
-@section('content')
+<!-- @section('content') -->
     @include('partials.page-header')
+
+
+    <x-section container="md:container mx-auto p-4" bgColor="secondary">
+    <div class="flex flex-wrap">
+      
+        <div class="w-full lg:w-1/2">
+            <span>Create a Hands-Off<span>
+            <h2>Income</h2>
+            <p>Build a profitable HMO property portfolio with the help of our in-house specialists and create a lifestyle that generates 30% returns on your investment.</p>
+            <x-button variatn="primary" kind="outline">Downolad Prospectus</x-button>
+        </div>
+
+        <div class="w-full lg:w-1/2">
+            <img class="rounded-full" src="https://sourcedfranchise.co/wp-content/uploads/2020/11/293284-P6WZYT-188.jpg" alt="none"/>
+        </div>
+
+    </div>
+    </x-section>
+
+    <!-- bgcolor rename to variant perhpas -->
+    <x-section bgColor="teritary">
+    dj
+    </x-section>
+
 
     <x-section>
         <h2>Buttons</h2>
